@@ -41,3 +41,31 @@ game:GetService("ReplicatedStorage").Shared.events.RemoteEvent:FireServer(unpack
 wait(0.1)
 end
 end)
+
+local mod = main:Button("Auto Attack", function()
+_G.attack_enabled = not _G.attack_enabled
+while _G.attack_enabled do
+local args = {
+    [1] = "attack"
+}
+
+game:GetService("ReplicatedStorage").Shared.events.RemoteEvent:FireServer(unpack(args))
+wait(0.1)
+end
+end)
+
+local mod = main:Button("Spin Ninja", function()
+_G.spinninja_enabled = not _G.spinninja_enabled
+while _G.spinninja_enabled do
+local args = {
+    [1] = "spin",
+    [2] = "champions",
+    [3] = "three",
+    [4] = "ninja village"
+}
+
+game:GetService("ReplicatedStorage").Shared.events.RemoteEvent:FireServer(unpack(args))
+
+wait(0.1)
+end
+end)
