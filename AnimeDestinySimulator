@@ -43,14 +43,21 @@ end
 end)
 
 local mod = main:Button("Auto Attack", function()
-_G.attack_enabled = not _G.attack_enabled
-while _G.attack_enabled do
-local args = {
-    [1] = "attack"
-}
-
-game:GetService("ReplicatedStorage").Shared.events.RemoteEvent:FireServer(unpack(args))
-wait(0.1)
+while true do
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2870.177001953125, 35.459407806396484, -786.2244873046875)
+wait(0.6)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2836.72119140625, 35.45846176147461, -773.2184448242188)
+wait(0.6)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2820.1455078125, 35.45872497558594, -759.8580322265625)
+wait(0.6)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2691.54931640625, 40.53227615356445, -906.3787841796875)
+wait(0.6)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2763.568115234375, 40.53424072265625, -910.099365234375)
+wait(0.6)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2742.144775390625, 40.22147750854492, -894.8228759765625)
+wait(0.6)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2761.903564453125, 39.42042922973633, -880.05419921875)
+wait(0.6)
 end
 end)
 
