@@ -42,8 +42,11 @@ wait(0.1)
 end
 end)
 
-local mod = main:Button("Auto Attack", function()
+local mod = main:Button("CLOVER START", function()
+getgenv().on = true
+
 while true do
+    if not on then break end
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2870.177001953125, 35.459407806396484, -786.2244873046875)
 wait(0.6)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2836.72119140625, 35.45846176147461, -773.2184448242188)
@@ -60,43 +63,6 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2761.90
 wait(0.6)
 end
 end)
-
-local mod = main:Button("DUNGEON START", function()local mod = main:Button("Spin Ninja", function()
-getgenv().on = true
-
-while true do
-    if not on then break end
-local player = game.Players.LocalPlayer
-local character = player.Character or player.CharacterAdded:wait()
-local humanoid = character:WaitForChild("Humanoid")
-
-local destination = Vector3.new(999.1915893554688, 280.9935302734375, 7104.4453125) 
-
-humanoid:MoveTo(destination)
-    wait(2) 
-sethiddenproperty(game.Players.LocalPlayer.Character.Humanoid, "WalkSpeed", 250)
-wait(0.1) 
-end
-end)
-
-local mod = main:Button("DUNGEON STOP", function()local mod = main:Button("Spin Ninja", function()
-getgenv().on = false
-
-while true do
-    if not on then break end
-local player = game.Players.LocalPlayer
-local character = player.Character or player.CharacterAdded:wait()
-local humanoid = character:WaitForChild("Humanoid")
-
-local destination = Vector3.new(999.1915893554688, 280.9935302734375, 7104.4453125) 
-
-humanoid:MoveTo(destination)
-    wait(2) 
-sethiddenproperty(game.Players.LocalPlayer.Character.Humanoid, "WalkSpeed", 250)
-wait(0.1) 
-end
-end)
-
 
 local mod = main:Button("DEMON START", function()local mod = main:Button("Spin Ninja", function()
 getgenv().on = true
@@ -149,52 +115,6 @@ end
 end)
 
 
-local mod = main:Button("DEMON STOP", function()local mod = main:Button("Spin Ninja", function()
+local mod = main:Button("STOP FARM", function()local mod = main:Button("Spin Ninja", function()
 getgenv().on = false
-
-while true do
-    if not on then break end
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-8054.28662109375, 35.2972526550293, -860.7669677734375)
-wait(0.2)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-8086.859375, 35.29780960083008, -889.4215087890625)
-wait(0.2)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-8129.6708984375, 35.297889709472656, -881.7810668945312)
-wait(0.2)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-8086.66943359375, 35.8785285949707, -828.9694213867188)
-wait(0.2)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-8103.34130859375, 35.88258361816406, -798.14599609375)
-wait(0.2)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-8139.16650390625, 35.29758834838867, -835.5782470703125)
-wait(0.2)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-8144.86572265625, 35.297950744628906, -863.2449340820312)
-wait(0.2)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-8151.53271484375, 35.298152923583984, -886.7630615234375)
-wait(0.2)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-8170.8828125, 35.2972297668457, -867.46875)
-wait(0.2)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-8193.0087890625, 34.88398361206055, -855.3760986328125)
-wait(0.2)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-8182.5302734375, 35.2968635559082, -828.060791015625)
-wait(0.2)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-8149.48046875, 35.29763412475586, -818.2897338867188)
-wait(0.2)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-8202.9267578125, 36.181884765625, -797.1920166015625)
-wait(0.2)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-8193.845703125, 40.05986022949219, -754.8383178710938)
-wait(0.2)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-8160.30322265625, 40.060546875, -741.8945922851562)
-wait(0.2)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-8202.3076171875, 40.05982208251953, -718.05078125)
-wait(0.2)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-8223.19140625, 40.094940185546875, -726.855224609375)
-wait(0.2)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-8192.58984375, 40.06001281738281, -683.0667724609375)
-wait(0.2)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-8150.19287109375, 40.06037139892578, -695.9668579101562)
-wait(0.2)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-8119.75390625, 40.64723205566406, -680.3541870117188)
-wait(0.2)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-8234.7978515625, 48.23640441894531, -972.7186279296875)
-wait(0.2)
-end
 end)
