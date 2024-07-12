@@ -42,6 +42,21 @@ wait(0.1)
 end
 end)
 
+local mod = main:Button("AUTO DUNGEON", function()
+getgenv().on = true
+while true do
+    if not on then break end
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(5687.5654296875, 59.88078308105469, -763.3558349609375)
+wait(1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(5719.51171875, 60.342803955078125, -840.09375)
+wait(1199)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(5698.25634765625, 60.34347152709961, -853.7880249023438)
+wait(1200)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(5673.27880859375, 60.343475341796875, -853.3474731445312)
+wait(1200)
+end
+end)
+
 local mod = main:Button("CLOVER START", function()
 getgenv().on = true
 
